@@ -32,19 +32,7 @@
             text-shadow: 0px 6px 3px #846843;
         }
 
-        nav {
-            margin: 10px auto;
-            width: 960px;
-            background: rgb(33, 16, 11);
-        }
-
-        nav a {
-            font-size: 1em;
-            color: rgb(243, 255, 188);
-            text-transform: uppercase;
-            display: block;
-            text-decoration: none;
-}
+    
 
         figure {
             margin-right: auto;
@@ -89,7 +77,7 @@
             width: 600px;
             max-width: 100%;
             margin: 30px auto;
-}
+        }
 
         button {
             display: inline-block;
@@ -118,12 +106,38 @@
 
         /* Giulchin's Styles */
 
+
+nav {
+    margin: 10px auto;
+    width: 960px;
+    background: rgb(33, 16, 11);
+    border: 1px solid rgb(145, 35, 25);
+    box-sizing: border-box;
+}
+
 nav ul {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 25px;
+}
+
+nav li {
+    flex-grow: 1;
+    border-right: 2px solid rgb(155, 155, 35);
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a {
+    font-size: 1em;
+    color: rgb(243, 255, 188);
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding: 15px 16px;
 }
 
 
